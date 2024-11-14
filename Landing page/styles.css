@@ -1,0 +1,188 @@
+   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: #1a1a1a;
+    overflow-x: hidden;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    animation: slideIn 1.2s ease-in-out;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #4f46e5;
+  }
+  
+  .login-btn {
+    background: #4f46e5;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    animation: bounce 2s infinite;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .welcome-section {
+    text-align: center;
+    margin-top: 80px;
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+  .welcome-section h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+  }
+  
+  .welcome-section p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+  
+  .search-bar {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  }
+  
+  .search-bar button {
+    padding: 10px;
+    background-color: #4f46e5;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-bar button:hover {
+    background-color: #3b32d6;
+  }
+  
+  .learn-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4f46e5;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background 0.3s;
+    animation: fadeInUp 2s ease-in-out;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #3b32d6;
+  }
+  
+  .features-section {
+    margin-top: 60px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .features-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .feature {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    transition: transform 0.3s;
+  }
+  
+  .feature:hover {
+    transform: scale(1.1);
+  }
+  
+  .about-section {
+    margin-top: 60px;
+    text-align: center;
+    max-width: 600px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    font-size: 1.1rem;
+    color: #ccc;
+    line-height: 1.5;
+  }
+   
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  @keyframes fadeInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
